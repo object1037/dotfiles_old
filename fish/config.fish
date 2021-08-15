@@ -1,13 +1,13 @@
-balias la 'exa -a'
-balias ll 'exa -l --git -h'
-balias ls 'exa'
+alias la 'exa -a'
+alias ll 'exa -l --git -h'
+alias ls 'exa'
 
-balias gs 'git status'
-balias ga 'git add'
-balias gc 'git commit'
-balias gpush 'git push'
-balias gpull 'git pull'
-balias gl 'git log --graph --all --format="%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(black magenta)%d%Creset %s"'
+alias gs 'git status'
+alias ga 'git add'
+alias gc 'git commit'
+alias gpush 'git push'
+alias gpull 'git pull'
+alias gl 'git log --graph --all --format="%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(black magenta)%d%Creset %s"'
 
 set fish_color_param "#2b98f0"
 set fish_color_command brwhite --bold
