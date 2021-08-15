@@ -1,6 +1,7 @@
 alias la 'exa -a'
-alias ll 'exa -l --git -h'
+alias ll 'exa -l --git -h --icons'
 alias ls 'exa'
+alias lst 'exa -T --icons'
 
 alias gs 'git status'
 alias ga 'git add'
