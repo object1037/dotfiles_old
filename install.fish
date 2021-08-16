@@ -10,4 +10,10 @@ end
 # hyper
 ln -nsf "$dir/.hyper.js" "$HOME/.hyper.js"
 
+# bin
+mkdir -p "$HOME/bin"
+for file in (ls -A bin | grep -v ".DS_Store")
+    ln -nsf "$dir/bin/$file" "$HOME/bin/$file"
+end
+
 fisher update
