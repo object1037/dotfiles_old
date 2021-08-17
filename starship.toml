@@ -1,7 +1,7 @@
 format = """
 $username\
 $hostname\
-[ $directory [](#64748B)](bg:#64748B)[$git_branch$git_status](bold)[[](fg:#263238 bg:#94A3B8)$cmd_duration[](#94A3B8)](bg:#94A3B8) """
+[ $directory [](#64748B)](bg:#64748B)[$git_branch$git_status](bold)[[](fg:#263238 bg:#64748B)$cmd_duration[](fg:#64748B)](bg:#64748B) """
 
 [directory]
 format = "[$path]($style)[$read_only]($read_only_style)"
@@ -13,7 +13,7 @@ format = " [\\[$symbol$branch\\]]($style) "
 
 [cmd_duration]
 format = " [$duration]($style) "
-style = "fg:#263238 bg:#94A3B8"
+style = "fg:#263238 bg:#64748B"
 
 [nodejs]
 disabled = true
