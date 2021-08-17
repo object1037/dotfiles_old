@@ -8,7 +8,9 @@ for file in (ls -A fish | grep -v ".DS_Store")
 end
 
 # hyper
-ln -nsf "$dir/.hyper.js" "$HOME/.hyper.js"
+for file in (ls -A hyper | grep -v ".DS_Store")
+    ln -nsf "$dir/hyper/$file" "$HOME/$file"
+end
 
 # bin
 mkdir -p "$HOME/bin"
