@@ -13,13 +13,17 @@ abbr glog git log --oneline
 
 alias gl 'git log --graph --all --format="%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(black magenta)%d%Creset %s"'
 
-set fish_color_param "#2b98f0"
 set fish_color_command brwhite --bold
-set fish_color_autosuggestion "#94A3B8"
-set fish_color_operator "#fee94e"
-set fish_color_escape purple
+set fish_color_keyword "#F0ABFC"
+set fish_color_quote "#86EFAC"
+set fish_color_redirection "#FCA5A5"
+set fish_color_end white
 set fish_color_error "#FF5252"
-set fish_color_quote "#9CCC65"
+set fish_color_param "#93C5FD"
+set fish_color_comment "#64748B"
+set fish_color_operator "#FCD34D"
+set fish_color_escape "#D8B4FE"
+set fish_color_autosuggestion "#94A3B8"
 
 set fish_greeting "Happy Hacking!"
 
