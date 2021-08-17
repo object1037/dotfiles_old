@@ -11,7 +11,7 @@ alias gpull 'git pull'
 alias gl 'git log --graph --all --format="%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(black magenta)%d%Creset %s"'
 
 set fish_color_param "#2b98f0"
-set fish_color_command brwhite --bold
+set fish_color_command brwhite
 set fish_color_autosuggestion "#94A3B8"
 set fish_color_operator "#fee94e"
 set fish_color_escape purple
