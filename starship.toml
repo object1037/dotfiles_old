@@ -1,9 +1,11 @@
 format = """
-[ $directory [](#7284A8)](bg:#7284A8) [$git_branch$git_status](bold)"""
+$username\
+$hostname\
+[ $directory [](#64748B)](bg:#64748B) [$git_branch$git_status](bold)"""
 
 [directory]
 format = "[$path]($style)[$read_only]($read_only_style)"
-style = "bold bg:#7284A8"
+style = "bold bg:#64748B"
 
 [git_branch]
 symbol = " "
