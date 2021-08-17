@@ -1,5 +1,4 @@
-/* #window */
-/* CSS for the window goes here */
-
-/* #terminal */
-/* CSS for the terminal goes here */
+/* #css */
+.tab_textActive {
+  border-bottom: 2px solid #ff0092;
+}

@@ -1,4 +1,4 @@
-// -- hyper-stylesheet-hash:7e4b33d7cdf8362995915389f46712d9 --
+// -- hyper-stylesheet-hash:d2630ddc1682431fbe4d7621d5b82c47 --
 // Future versions of Hyper may add additional config options,
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
@@ -161,9 +161,8 @@ module.exports = {
       "hyper-search",
       "hyperterm-material",
       "hyper-opacity",
-      "hyper-stylesheet",
       "hyper-tab-icons",
-      //"hyperline"
+      "hyper-stylesheet",
   ],
 
   // in development, you can create a directory under
