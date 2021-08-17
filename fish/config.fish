@@ -18,6 +18,8 @@ set fish_color_escape purple
 set fish_color_error "#FF5252"
 set fish_color_quote "#9CCC65"
 
+set fish_greeting "Happy Hacking!"
+
 set -x PATH /Users/object_1037/.local/bin $PATH
 set -x PATH /Users/object_1037/.nodebrew/current/bin $PATH
 set -x PATH $HOME/.rbenv/shims $PATH
