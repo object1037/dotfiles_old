@@ -1,13 +1,16 @@
-alias la 'exa -a'
-alias ll 'exa -l --git -h --icons'
 alias ls 'exa'
-alias lst 'exa -T --icons'
 
-alias gs 'git status'
-alias ga 'git add'
-alias gc 'git commit'
-alias gpush 'git push'
-alias gpull 'git pull'
+abbr -a la ls -a
+abbr -a ll ls -l --git -h --icons
+abbr -a lst ls -T --icons
+
+abbr gs git status
+abbr ga git add
+abbr gc git commit
+abbr gpush git push origin
+abbr gpull git pull origin
+abbr glog git log --oneline
+
 alias gl 'git log --graph --all --format="%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(black magenta)%d%Creset %s"'
 
 set fish_color_param "#2b98f0"
