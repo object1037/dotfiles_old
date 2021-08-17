@@ -71,25 +71,7 @@ module.exports = {
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
-    colors: {
-      black: '#263238',
-      red: '#FF5252',
-      green: '#9CCC65',
-      yellow: '#fee94e',
-      blue: '#2b98f0',
-      magenta: '#b38bfc',
-      cyan: '#68b6f3',
-      white: '#ECEFF1',
-      lightBlack: '#617d8a',
-      lightRed: '#fc625d',
-      lightGreen: '#9CCC65',
-      lightYellow: '#fee94e',
-      lightBlue: '#2b98f0',
-      lightMagenta: '#b38bfc',
-      lightCyan: '#68b6f3',
-      lightWhite: '#ffffff'
-    },
-
+    colors: {},
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
