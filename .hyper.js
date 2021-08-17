@@ -10,10 +10,10 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 15,
+    fontSize: 13,
 
     // font family with optional fallbacks
-    fontFamily: 'Cica',
+    fontFamily: 'JetBrainsMono Nerd Font',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
