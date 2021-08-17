@@ -13,7 +13,7 @@ module.exports = {
     fontSize: 13,
 
     // font family with optional fallbacks
-    fontFamily: 'JetBrainsMono Nerd Font',
+    fontFamily: 'JetBrainsMono Nerd Font, Cica',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
