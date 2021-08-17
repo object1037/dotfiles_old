@@ -16,4 +16,7 @@ for file in (ls -A bin | grep -v ".DS_Store")
     ln -nsf "$dir/bin/$file" "$HOME/bin/$file"
 end
 
+# starship
+ln -nsf "$dir/starship.toml" "$HOME/.config/starship.toml"
+
 fisher update
