@@ -9,7 +9,8 @@ style = "bold bg:#64748B"
 
 [git_branch]
 symbol = " "
-format = "[$symbol$branch]($style) "
+format = "[\\[$symbol$branch\\]]($style) "
+
 
 [nodejs]
 disabled = true
