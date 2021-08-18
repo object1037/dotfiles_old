@@ -1,4 +1,4 @@
-#!usr/bin/fish
+#!usr/local/bin/fish
 
 set --local dir (pwd)
 set --local HAS_EXA false
