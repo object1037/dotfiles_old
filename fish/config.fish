@@ -27,8 +27,8 @@ set fish_color_autosuggestion "#94A3B8"
 
 set fish_greeting "Happy Hacking!"
 
-set -x PATH /Users/object_1037/.local/bin $PATH
-set -x PATH /Users/object_1037/.nodebrew/current/bin $PATH
+set -x PATH $HOME/.local/bin $PATH
+set -x PATH $HOME/.nodebrew/current/bin $PATH
 set -x PATH $HOME/.rbenv/shims $PATH
 set -x PATH $HOME/.pyenv/shims $PATH
 set -x PATH $HOME/bin $PATH
