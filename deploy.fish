@@ -1,6 +1,7 @@
 #!usr/bin/fish
 
 set --local dir (pwd)
+set --local HAS_EXA false
 
 function has -a CMD_NAME
   type "$CMD_NAME" > /dev/null 2>&1
@@ -12,9 +13,13 @@ function info -a MSG
   set_color normal; echo "] $MSG"
 end
 
+if has "exa"
+    set HAS_EXA true
+end
+
 # brew
 info "Installing brew packages..."
-for file in (ls -A brew | grep -v ".DS_Store")
+for file in (ls -($HAS_EXA && echo "a"; ! $HAS_EXA && echo "A") brew | grep -v ".DS_Store")
     ln -nsf "$dir/brew/$file" "$HOME/$file"
 end
 cd $HOME
@@ -23,7 +28,7 @@ cd $dir
 
 # fish
 info "Installing fish config files..."
-for file in (ls -A fish | grep -v ".DS_Store")
+for file in (ls -($HAS_EXA && echo "a"; ! $HAS_EXA && echo "A") fish | grep -v ".DS_Store")
     ln -nsf "$dir/fish/$file" "$HOME/.config/fish/$file"
 end
 
@@ -32,14 +37,14 @@ fisher update
 
 # hyper
 info "Installing Hyper config files..."
-for file in (ls -A hyper | grep -v ".DS_Store")
+for file in (ls -($HAS_EXA && echo "a"; ! $HAS_EXA && echo "A") hyper | grep -v ".DS_Store")
     ln -nsf "$dir/hyper/$file" "$HOME/$file"
 end
 
 # bin
 info "Installing bin files..."
 mkdir -p "$HOME/bin"
-for file in (ls -A bin | grep -v ".DS_Store")
+for file in (ls -($HAS_EXA && echo "a"; ! $HAS_EXA && echo "A") bin | grep -v ".DS_Store")
     ln -nsf "$dir/bin/$file" "$HOME/bin/$file"
 end
 
