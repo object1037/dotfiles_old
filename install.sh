@@ -1,11 +1,22 @@
 #!/bin/bash
 
+has() {
+  type "$1" > /dev/null 2>&1
+}
+
 # Homebrew
-echo "Installing Homebrew..."
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+if has "brew"; then
+  echo "Homebrew already installed."
+else 
+  echo "Installing Homebrew..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
-ln -nsf "$(pwd)/Brewfile" "$HOME/Brewfile"
-
-brew bundle
+if has "fish"; then
+  echo "fish already installed."
+else
+  echo "Installing fish..."
+  brew install fish
+fi
 
 fish ./deploy.fish

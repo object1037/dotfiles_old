@@ -12,24 +12,32 @@ function info -a MSG
   set_color normal; echo "] $MSG"
 end
 
+# brew
+info "Installing brew packages..."
+for file in (ls -A brew | grep -v ".DS_Store")
+    ln -nsf "$dir/brew/$file" "$HOME/$file"
+end
+brew bundle
+
 # fish
 info "Installing fish config files..."
-for file in (ls -a fish | grep -v ".DS_Store")
+for file in (ls -A fish | grep -v ".DS_Store")
     ln -nsf "$dir/fish/$file" "$HOME/.config/fish/$file"
 end
 
+info "Installing fisher packages..."
 fisher update
 
 # hyper
 info "Installing Hyper config files..."
-for file in (ls -a hyper | grep -v ".DS_Store")
+for file in (ls -A hyper | grep -v ".DS_Store")
     ln -nsf "$dir/hyper/$file" "$HOME/$file"
 end
 
 # bin
 info "Installing bin files..."
 mkdir -p "$HOME/bin"
-for file in (ls -a bin | grep -v ".DS_Store")
+for file in (ls -A bin | grep -v ".DS_Store")
     ln -nsf "$dir/bin/$file" "$HOME/bin/$file"
 end
 
