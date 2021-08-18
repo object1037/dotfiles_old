@@ -51,3 +51,10 @@ ln -nsf "$dir/starship.toml" "$HOME/.config/starship.toml"
 info "Setting up git..."
 git config --global user.email "contact@object1037.dev"
 git config --global user.name "object1037"
+
+# bat
+info "Setting up bat..."
+mkdir -p (bat --config-dir)/themes
+ln -nsf "$dir/bat/duotonedarksea.tmTheme" (bat --config-dir)/themes/duotonedarksea.tmTheme
+ln -nsf "$dir/bat/config" (bat --config-file)
+bat cache --build
