@@ -13,22 +13,31 @@ function info -a MSG
 end
 
 # fish
-for file in (ls -A fish | grep -v ".DS_Store")
+info "Installing fish config files..."
+for file in (ls -a fish | grep -v ".DS_Store")
     ln -nsf "$dir/fish/$file" "$HOME/.config/fish/$file"
 end
 
+fisher update
+
 # hyper
-for file in (ls -A hyper | grep -v ".DS_Store")
+info "Installing Hyper config files..."
+for file in (ls -a hyper | grep -v ".DS_Store")
     ln -nsf "$dir/hyper/$file" "$HOME/$file"
 end
 
 # bin
+info "Installing bin files..."
 mkdir -p "$HOME/bin"
-for file in (ls -A bin | grep -v ".DS_Store")
+for file in (ls -a bin | grep -v ".DS_Store")
     ln -nsf "$dir/bin/$file" "$HOME/bin/$file"
 end
 
 # starship
+info "Installing starship..."
 ln -nsf "$dir/starship.toml" "$HOME/.config/starship.toml"
 
-fisher update
+# git
+info "Setting up git..."
+git config --global user.email "contact@object1037.dev"
+git config --global user.name "object1037"
