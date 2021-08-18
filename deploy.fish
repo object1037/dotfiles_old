@@ -17,6 +17,13 @@ info "Installing brew packages..."
 for file in (ls -A brew | grep -v ".DS_Store")
     ln -nsf "$dir/brew/$file" "$HOME/$file"
 end
+if test ! -e ~/Brewfile
+    echo "Searching Brewfile"
+    while test ! -e ~/Brewfile
+        echo -n "."
+        sleep 1
+    end
+end
 brew bundle
 
 # fish
