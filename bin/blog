@@ -13,7 +13,6 @@ echo 'export const meta = {
 }
 
 import ArticleLayout from "../../components/articleLayout"
-
 //import imageName from "../../public/images/'(date +%Y%m%d)'/imageName.jpg"
 
 
