@@ -1,4 +1,4 @@
-// -- hyper-stylesheet-hash:d2630ddc1682431fbe4d7621d5b82c47 --
+// -- hyper-stylesheet-hash:5e3242381d8a2635107c8591d3f6e5ca --
 // Future versions of Hyper may add additional config options,
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
@@ -24,7 +24,7 @@ module.exports = {
     lineHeight: 1.1,
     
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: '#FF006E',
+    cursorColor: '#fd2e7a',
 
     // terminal text color under BLOCK cursor
     cursorAccentColor: '#fff',
@@ -115,7 +115,7 @@ module.exports = {
   	tabIcons: {
   		mapColors: {
   			bash: '#FFF',
-  			fish: '#FF006E',
+  			fish: '#fd2e7a',
   			git: '#F1502F',
   			gl: '#F1502F',
   			ruby: '#D51F06',
