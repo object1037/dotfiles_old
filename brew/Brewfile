@@ -1,3 +1,4 @@
+tap "carlocab/personal"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -38,6 +39,7 @@ brew "topgrade"
 brew "wget"
 brew "yarn"
 brew "youtube-dl"
+brew "carlocab/personal/unrar"
 brew "heroku/brew/heroku"
 brew "nyuichi/satysfi/satysfi", args: ["HEAD"]
 brew "teamookla/speedtest/speedtest"
