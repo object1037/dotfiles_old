@@ -6,6 +6,8 @@ $hostname\
 [directory]
 format = "[$path]($style)[$read_only]($read_only_style)"
 style = "bold bg:#64748B"
+read_only = " "
+read_only_style = "yellow bg:#64748B"
 
 [git_branch]
 symbol = " "
